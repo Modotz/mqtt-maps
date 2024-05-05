@@ -207,6 +207,8 @@
         if (connectionStatus == false) {
           // Connect to MQTT broker
           console.log(broker);
+          console.log(port);
+          console.log(topic);
           client.connect({
             onSuccess: onConnect,
             useSSL: false,
